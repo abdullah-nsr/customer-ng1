@@ -1,0 +1,72 @@
+<div class="container">
+  <table class="responsive-table">
+    <caption>Top 10 Grossing Animated Films of All Time</caption>
+    <thead>
+      <tr>
+        <th scope="col">Film Title</th>
+        <th scope="col">Released</th>
+        <th scope="col">Studio</th>
+        <th scope="col">Worldwide Gross</th>
+        <th scope="col">Domestic Gross</th>
+        <th scope="col">Foreign Gross</th>
+        <th scope="col">Budget</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td colspan="7">Sources: <a href="http://en.wikipedia.org/wiki/List_of_highest-grossing_animated_films" rel="external">Wikipedia</a> &amp; <a href="http://www.boxofficemojo.com/genres/chart/?id=animation.htm" rel="external">Box Office Mojo</a>. Data is current as of August 25, 2016.</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <th scope="row">Frozen</th>
+        <td data-title="Released">2013</td>
+        <td data-title="Studio">Disney</td>
+        <td data-title="Worldwide Gross" data-type="currency">$1,287,000,000</td>
+        <td data-title="Domestic Gross" data-type="currency">$400,738,009	</td>
+        <td data-title="Foreign Gross" data-type="currency">$875,742,326</td>
+        <td data-title="Budget" data-type="currency">$150,000,000</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+        <div class="container">
+          <table class="responsive-table">
+            <caption>Top 10 Grossing Animated Films of All Time</caption>
+            <thead>
+              <tr class="heroes">
+                <th scope="col" >a</th>
+                <th scope="col">campaignid</th>
+                <th scope="col">userid</th>
+                <th scope="col">camp_cpc</th>
+                <th scope="col">date</th>
+                <th scope="col">frienddomainid</th>
+                <th scope="col">freeclick</th>
+                <th scope="col1">network</th>
+                <th scope="col1">PlistaProduct</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <td colspan="7">Sources: <a href="http://en.wikipedia.org/wiki/List_of_highest-grossing_animated_films" rel="external">Wikipedia</a> &amp; <a href="http://www.boxofficemojo.com/genres/chart/?id=animation.htm" rel="external">Box Office Mojo</a>. Data is current as of August 25, 2016.</td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <th class="heroes">
+                <tr  *ngFor="let customer of customers"
+                [class.selected]="customer === selectedCustomer"
+                (click)="onSelect(customer)">
+               <span class="badge">{{customer.a}}</span></tr>
+               </th>
+               <th>
+               <tr *ngFor="let customer of customers"
+               [class.selected]="customer === selectedCustomer"
+               (click)="onSelect(customer)">
+               <span class="badge">{{customer.campaignid}}</span></tr>
+               </th>
+   
+            </tbody>
+          </table>
+        </div>
